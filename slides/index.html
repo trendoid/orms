@@ -1,18 +1,50 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.css">
-        <link rel="stylesheet" href="bower_components/reveal.js/css/theme/white.css">
-    </head>
-    <body>
-        <div class="reveal">
-            <div class="slides">
-                <section>Slide 1</section>
-                <section>Slide 2</section>
-            </div>
+
+<head>
+    <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="bower_components/reveal.js/css/theme/white.css">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>Slide 1</section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## Page title
+
+                    A paragraph with some text and a [link](http://hakim.se).
+                </script>
+            </section>
+            <section>Slide 2</section>
         </div>
-        <script src="bower_components/reveal.js/js/reveal.js"></script>
-        <script>
-            Reveal.initialize();
+    </div>
+    <script src="bower_components/reveal.js/lib/js/head.min.js"></script>
+    <script src="bower_components/reveal.js/js/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            dependencies: [
+                // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+                { src: 'bower_components/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+                // Interpret Markdown in <section> elements
+                { src: 'bower_components/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'bower_components/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+                // Syntax highlight for <code> elements
+                { src: 'bower_components/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+
+                // Zoom in and out with Alt+click
+                { src: 'bower_components/reveal.js/plugin/zoom-js/zoom.js', async: true },
+
+                // Speaker notes
+                { src: 'bower_components/reveal.js/plugin/notes/notes.js', async: true },
+
+                // MathJax
+                { src: 'bower_components/reveal.js/plugin/math/math.js', async: true }
+            ]
+        });
         </script>
-    </body>
+</body>
+
 </html>

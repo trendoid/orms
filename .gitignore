@@ -30,6 +30,7 @@ build/Release
 node_modules
 bower_components
 jspm_packages
+sean/public
 
 # Optional npm cache directory
 .npm

@@ -25,6 +25,7 @@ orm.connect(config.db.name, config.db.username, config.db.password, {
   storage: config.db.storage,
   logging: config.db.enableSequelizeLog ? winston.verbose : false,
   dialectOptions: {
-    ssl: config.db.ssl ? config.db.ssl : false
+    ssl: config.db.ssl ? config.db.ssl : false,
+    encrypt: config.db.encrypt ? config.db.encrypt :false
   }
 });

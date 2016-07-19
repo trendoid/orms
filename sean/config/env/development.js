@@ -4,12 +4,12 @@ var defaultEnvConfig = require('./default');
 
 module.exports = {
   db: {
-    name: process.env.DB_NAME || "seanjs_dev",
+    name: process.env.DB_NAME || "seans_dev",
     host: process.env.DB_HOST || "localhost",
-    port: process.env.DB_PORT || 3306,
-    username: process.env.DB_USERNAME || "root",
-    password: process.env.DB_PASSWORD || "root",
-    dialect: process.env.DB_DIALECT || "mysql",
+    port: process.env.DB_PORT || 1433,
+    username: process.env.DB_USERNAME || "seanjs",
+    password: process.env.DB_PASSWORD || "P@$$w0rd!",
+    dialect: process.env.DB_DIALECT || "mssql",
     enableSequelizeLog: process.env.DB_LOG || false,
     ssl: process.env.DB_SSL || false,
     sync: process.env.DB_SYNC || true //Synchronizing any model changes with database

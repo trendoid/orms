@@ -1,0 +1,20 @@
+<section ng-controller="QuotesController" ng-init="find()">
+  <div class="page-header">
+    <h1>Quotes</h1>
+  </div>
+  <div class="list-group">
+    <a ng-repeat="quote in quotes" ui-sref="quotes.view({quoteId: quote.id})" class="list-group-item">
+      <small class="list-group-item-text">
+        Posted on
+        <span ng-bind="quote.created | date:'mediumDate'"></span>
+        by
+        <span ng-bind="quote.user.username"></span>
+      </small>
+      <h4 class="list-group-item-heading" ng-bind="quote.title"></h4>
+      <p class="list-group-item-text" ng-bind="quote.content"></p>
+    </a>
+  </div>
+  <div class="alert alert-warning text-center" ng-if="!quotes.length">
+    No quotes yet, why don't you <a ui-sref="quotes.create">create one</a>?
+  </div>
+</section>

@@ -2,7 +2,7 @@
 
 <head>
     <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.css">
-    <link rel="stylesheet" href="bower_components/reveal.js/css/theme/white.css">
+    <link rel="stylesheet" href="bower_components/reveal.js/css/theme/league.css">
 </head>
 
 <body>
@@ -10,33 +10,123 @@
         <div class="slides">
             <section data-markdown>
                 <script type="text/template">
-                    ## ORMs
+                    # ORMs... 
+                    ## can't live with 'em, can't kill 'em
 
-                    A paragraph with some text and a [link](http://hakim.se).
+                    Developers and DBA's need to live together in harmony, or not.
                 </script>
             </section>
             <section data-markdown>
                 <script type="text/template">
                     ## Aaron Stanley King
 
-                    A paragraph with some text and a [link](http://hakim.se).
+                    Programming is not only my profession but also my hobby and integrated into my lifestyle.  I think that computers and technology help me lead a more fulfilling life and make best use of my time.  My family, friends, and co-workers would call me a geek or nerd.  I am proud of those titles.  I have always been working with a website in various forms since 1996.  I grew up with computers and technology. I don't know what I would be like without that.
                 </script>
             </section>
-            <section>Definition</section>
-            <section>Legacy</section>
-            <section>Problems</section>
-            <section>Latest</section>
-            <section>Agile</section>
-            <section>Database First</section>
-            <section>Code First</section>
-            <section>aspnet Demos
-                
+            <section data-markdown>
+                <script type="text/template">
+                    # ORM 
+                    ## Object-relational mapp(er/ing)
+
+                    "technique for converting data between incompatible type systems in object-oriented programming languages."
+                </script>
             </section>
-            <section>Migrations</section>
-            <section>Stored Procedures</section>
-            <section>SQL in source control</section>
-            <section>Resources</section>
-            <section>Contact Information</section>
+            <section data-markdown>
+                <script type="text/template">
+                    # Frameworks
+
+                    >One new framework created every 16 minutes
+
+                    .NET (Entity Framework, nHibernate, Linq2Sql, Dapper), JavaScript (Mongoose, Sequelize), PHP (Doctrine, Propel, ActiveRecord), Python (Storm, Django, SQLAlchemy), Java (Hibernate, who still uses Java?)
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    # Problem
+                    ## Database first vs. Code first.
+
+                    This is a problem because the direction a developer chooses can require a lot less work but slower code or a lot more work and faster code.
+                </script>
+            </section>
+            <section>Demo</section>
+            <section data-markdown>
+                <script type="text/template">
+                    ##Manifesto for Agile Software Development
+
+                    We are uncovering better ways of developing software by doing it and helping others do it. Through this work we have come to value:
+
+                    **Individuals and interactions** over processes and tools
+
+                    **Working software** over comprehensive documentation
+
+                    **Customer collaboration** over contract negotiation
+
+                    **Responding to change** over following a plan
+                    
+                    That is, while there is value in the items on the right, we value the items on the left more.
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ##Database First
+
+                    - Puts the responsibility on the SQL Developer
+                    - Best if 'execute only' practices followed
+                    - Can leverage existing databases                    
+                    - The code generated can be cumbersome and slow
+                    - Diagnosing issues can be a problem
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ##Code First
+
+                    - Puts the responsibility on the backend or full-stack developer
+                    - Best of TDD practices can be followed
+                    - Only the code needed is created
+                    - Can leverage existing databases but more work to merge
+                    - Diagnosing issues can be a problem
+                </script>
+            </section>
+            <section>demos</section>
+            <section data-markdown>
+                <script type="text/template">
+                    ##Migrations
+
+                    ###Oh crap, we are Agile!
+
+                    Releasing often requires a lot of database changes.
+                </script>
+            </section>
+            <section>demos</section>
+            <section data-markdown>
+                <script type="text/template">
+                    ##Stored Procedures
+                    
+                    >The DBA did it.
+
+                    Stored Procedures in a code first environment aren't that much fun to maintain. 
+                    Don't do it.  Just decide to go execute only and thin out your data layer.
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ##Resources
+
+                    - The code is at https://github.com/trendoid/orms
+                    - https://github.com/aspnet/EntityFramework 
+                    - https://github.com/sequelize/sequelize 
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ##Contact Information
+
+                    - @trendoid on Twitter
+                    - trendoid@gmail.com on Google
+                    - http://aaronstanleyking.com is by Blog
+                </script>
+            </section>
         </div>
     </div>
     <script src="bower_components/reveal.js/lib/js/head.min.js"></script>

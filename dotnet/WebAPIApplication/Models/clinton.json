@@ -1,0 +1,36 @@
+// Copyright Rant Political 2015
+// by Bill Treadway
+// http://www.rantpolitical.com/2015/04/21/15-stupidest-things-hillary-clinton-has-ever-said/
+// and
+// Jumbo Joke 2008
+// http://www.jumbojoke.com/the_ten_dumbest_things_hillary_clinton_has_ever_said.html
+{
+    "stuff": [
+        {
+            "id": 1,
+            "quote": "I'm undaunted in my quest to amuse myself by constantly changing my hair."
+        },
+        {
+            "id": 2,
+            "quote": "We are going to take things away from you on behalf of the common good."
+        },
+        {
+            "id": 3,
+            "quote": "I have said that I'm not running and I'm having a great time being pres -- being a first-term senator."
+        },
+        {
+            "id": 4,
+            "quote": "We have a lot of kids who don't know what work means. They think work is a four-letter word."
+        },
+        {
+            "id": 5,
+            "quote": "He ran a gas station down in St. Louis... No, Mahatma Gandhi was a great leader of the 20th century."
+        },
+        {
+            "id": 6,
+            "quote": "I'm not going to have some reporters pawing through our papers. We are the president."
+        },
+        {"id":7,
+        "quote": "No. We just can't trust the American people to make those types of choices.... Government has to make those choices for people."}
+    ]
+}

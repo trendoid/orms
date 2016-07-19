@@ -28,7 +28,10 @@ build/Release
 
 # Dependency directories
 node_modules
+bower_components
 jspm_packages
+sean/public
+dotnet/wwwroot/lib
 
 # Optional npm cache directory
 .npm

@@ -4,7 +4,7 @@ var defaultEnvConfig = require('./default');
 
 module.exports = {
   db: {
-    name: process.env.DB_NAME || "seans_dev",
+    name: process.env.DB_NAME || "sean_dev",
     host: process.env.DB_HOST || "localhost",
     port: process.env.DB_PORT || 1433,
     username: process.env.DB_USERNAME || "seanjs",

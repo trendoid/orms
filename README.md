@@ -1,6 +1,9 @@
 # ORMs
 **ORMs… can’t live with ‘em, can’t kill ‘em.**
 
+
+[View the Slide Deck](https://trendoid.github.io/orms/)
+
 [![Women.. can't live with 'em, can't kill 'em.](https://i.ytimg.com/vi_webp/9GQxLtBsWq4/hqdefault.webp)](https://www.youtube.com/watch?v=9GQxLtBsWq4 "Women.. can't live with 'em, can't kill 'em.")
 
  
